@@ -1,0 +1,84 @@
+{
+  "name": "stop",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "wurCa",
+  "actions": [
+    {
+      "server": "0",
+      "info": "13",
+      "storage": "1",
+      "varName": "namecur",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "12",
+      "storage": "1",
+      "varName": "namenex",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "link",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "4",
+      "storage": "1",
+      "varName": "next",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "list",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "action": "0",
+      "name": "Control Audio"
+    },
+    {
+      "name": "Leave Voice Channel"
+    },
+    {
+      "title": "🎵 Ich mach Aus!",
+      "author": "",
+      "color": "00ffff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emb",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "message": "<:rechts:726933385905176587> **Ich Stoppe die Musik und Leave dem Channel!**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}

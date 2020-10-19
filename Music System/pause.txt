@@ -1,0 +1,81 @@
+{
+  "name": "pause",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "rmGUC",
+  "actions": [
+    {
+      "server": "0",
+      "info": "13",
+      "storage": "1",
+      "varName": "namecur",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "12",
+      "storage": "1",
+      "varName": "namenex",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "link",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "4",
+      "storage": "1",
+      "varName": "next",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "list",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "action": "1",
+      "name": "Control Audio"
+    },
+    {
+      "title": "🎵 Ich mach Pause!",
+      "author": "",
+      "color": "00ffff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emb",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "message": "<:rechts:726933385905176587> **Song Name:** ${tempVars(\"namecur\")}\n<:rechts:726933385905176587> **Song Link:** ${tempVars(\"link\")}\n<:rechts:726933385905176587> **Nächster Song Name:** ${tempVars(\"namenex\")}\n<:rechts:726933385905176587> **Nächster Song Name:** ${tempVars(\"next\")}\n<:rechts:726933385905176587> **Alle Songs:** ${tempVars(\"list\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}

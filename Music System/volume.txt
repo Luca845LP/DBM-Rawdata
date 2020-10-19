@@ -1,0 +1,80 @@
+{
+  "name": "volume",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "ifwcM",
+  "actions": [
+    {
+      "server": "0",
+      "info": "13",
+      "storage": "1",
+      "varName": "namecur",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "12",
+      "storage": "1",
+      "varName": "namenex",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "link",
+      "name": "Store Command Params"
+    },
+    {
+      "server": "0",
+      "info": "4",
+      "storage": "1",
+      "varName": "next",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "list",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "volume": "${tempVars(\"link\")}",
+      "name": "Set Audio Volume"
+    },
+    {
+      "title": "🎵 Volume Geändert!",
+      "author": "",
+      "color": "00ffff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emb",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "message": "<:rechts:726933385905176587> **Volume zu ${tempVars(\"link\")} Geändert!**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
