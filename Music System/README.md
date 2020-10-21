@@ -19,7 +19,7 @@
 ![](https://host.minirush.de/yl4wsc.png)
 
 ## Installiere Folgende Node Module
-![](https://host.minirush.de/td2a65.png)
+![](https://host.minirush.de/yfb1he.png)
 
 
 ## Ich Gebe gerne Support über Discord!
