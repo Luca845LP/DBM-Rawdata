@@ -21,14 +21,6 @@
     },
     {
       "server": "0",
-      "info": "12",
-      "storage": "1",
-      "varName": "namenex",
-      "varName2": "",
-      "name": "Store Audio Info"
-    },
-    {
-      "server": "0",
       "info": "3",
       "storage": "1",
       "varName": "list",
