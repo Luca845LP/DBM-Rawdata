@@ -13,14 +13,6 @@
       "name": "Store Audio Info"
     },
     {
-      "server": "0",
-      "info": "12",
-      "storage": "1",
-      "varName": "namenex",
-      "varName2": "",
-      "name": "Store Audio Info"
-    },
-    {
       "info": "0",
       "infoIndex": "1",
       "storage": "1",
