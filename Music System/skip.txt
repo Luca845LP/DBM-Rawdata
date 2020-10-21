@@ -14,14 +14,6 @@
     },
     {
       "server": "0",
-      "info": "12",
-      "storage": "1",
-      "varName": "namenex",
-      "varName2": "",
-      "name": "Store Audio Info"
-    },
-    {
-      "server": "0",
       "info": "9",
       "storage": "1",
       "varName": "link",
@@ -64,7 +56,7 @@
     {
       "storage": "1",
       "varName": "emb",
-      "message": "<:rechts:726933385905176587> **Nächster Song Name:** ${tempVars(\"namenex\")}\n<:rechts:726933385905176587> **Nächster Song Name:** ${tempVars(\"next\")}\n<:rechts:726933385905176587> **Alle Songs:** ${tempVars(\"list\")}",
+      "message": "<:rechts:726933385905176587> **Nächster Song:** ${tempVars(\"next\")}\n<:rechts:726933385905176587> **Alle Songs:** ${tempVars(\"list\")}",
       "name": "Set Embed Description"
     },
     {
