@@ -68,6 +68,65 @@
       "storage3": "0",
       "varName3": "",
       "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "next",
+      "comparison": "1",
+      "value": "'undefined'",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "url": "${tempVars(\"next\")}",
+      "seek": "0",
+      "volume": "",
+      "passes": "1",
+      "bitrate": "",
+      "type": "0",
+      "name": "Play YouTube Video"
+    },
+    {
+      "title": "🎵 Dein Song wird Abgespielt!",
+      "author": "",
+      "color": "00ffff",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emb",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "message": "<:rechts:726933385905176587> **Song Link:** ${tempVars(\"link\")}\n<:rechts:726933385905176587> **Nächster Song:** ${tempVars(\"next\")}\n<:rechts:726933385905176587> **Alle Songs:** ${tempVars(\"list\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "next",
+      "comparison": "1",
+      "value": "'undefined'",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "10",
+      "name": "Check Variable"
     }
   ],
   "comType": "0"
