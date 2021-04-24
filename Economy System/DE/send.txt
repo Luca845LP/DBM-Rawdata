@@ -1,0 +1,225 @@
+{
+  "name": "send",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "KtYDv",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "currentlevellollll",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"currentlevellollll\")}",
+      "info": "2",
+      "SecondNumber": "2000",
+      "storage": "1",
+      "varName": "maxbanksnewww",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "changeType": "0",
+      "value": "tempVars(\"maxbanksnewww\")",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "num",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "mon1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "mon2",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "money",
+      "comparison": "3",
+      "value": "tempVars(\"num\")",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "16",
+      "name": "Check Member Data"
+    },
+    {
+      "title": "",
+      "author": "Send",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du hast zu wenig Geld!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "FirstNumber": "${tempVars(\"mon1\")}",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"num\")}",
+      "storage": "1",
+      "varName": "money1",
+      "name": "Basic Math Operation"
+    },
+    {
+      "FirstNumber": "${tempVars(\"num\")}",
+      "info": "0",
+      "SecondNumber": "${tempVars(\"mon2\")}",
+      "storage": "1",
+      "varName": "money2",
+      "name": "Basic Math Operation"
+    },
+    {
+      "title": "",
+      "author": "Send",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "Du hast *`${tempVars(\"num\")}` Ententaler* an ${mentionedUser} gesendet!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "0",
+      "value": "tempVars(\"money1\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "0",
+      "value": "tempVars(\"money2\")",
+      "name": "Control Member Data"
+    }
+  ],
+  "_aliases": [
+    "transfer"
+  ],
+  "comType": "0"
+}
