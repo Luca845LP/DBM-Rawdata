@@ -1,0 +1,309 @@
+{
+  "name": "deposit",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "OsMfS",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "currentlevellollll",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"currentlevellollll\")}",
+      "info": "2",
+      "SecondNumber": "2000",
+      "storage": "1",
+      "varName": "maxbanksnewww",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "changeType": "0",
+      "value": "tempVars(\"maxbanksnewww\")",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "maxbank",
+      "name": "Store Member Data"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "value",
+      "name": "Store Command Params"
+    },
+    {
+      "FirstNumber": "${tempVars(\"value\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "valuweeee",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "comparison": "4",
+      "value": "tempVars(\"valuweeee\")",
+      "iftrue": "2",
+      "iftrueVal": "20",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Member Data"
+    },
+    {
+      "title": "",
+      "author": "Deposit",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "count": "3",
+      "name": "Skip Actions"
+    },
+    {
+      "title": "",
+      "author": "Deposit",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du hast nicht genug Platz auf der Bank! Du kannst maximal *${tempVars(\"maxbank\")} Ententaler* einzahlen! Bekomme mehr Platz indem du auflevelst!",
+      "name": "Set Embed Description"
+    },
+    {
+      "count": "1",
+      "name": "Skip Actions"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du würdest dich Verschulden wenn du so viel einzahlst!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "bank",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "bank",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "oldmoney",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "bank",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "oldbank",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"oldbank\")}",
+      "info": "0",
+      "SecondNumber": "${tempVars(\"value\")}",
+      "storage": "1",
+      "varName": "newbank",
+      "name": "Basic Math Operation"
+    },
+    {
+      "FirstNumber": "${tempVars(\"oldmoney\")}",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"value\")}",
+      "storage": "1",
+      "varName": "newmoney",
+      "name": "Basic Math Operation"
+    },
+    {
+      "storage": "1",
+      "varName": "newmoney",
+      "comparison": "3",
+      "value": "'0'",
+      "iftrue": "2",
+      "iftrueVal": "11",
+      "iffalse": "0",
+      "iffalseVal": "11",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "bank",
+      "changeType": "0",
+      "value": "tempVars(\"newbank\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "0",
+      "value": "tempVars(\"newmoney\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "money",
+      "name": "Store Member Data"
+    },
+    {
+      "title": "",
+      "author": "Deposit",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "Du hast *${tempVars(\"value\")} Ententaler* eingezahlt! Nun hast du *${tempVars(\"bank\")}/${tempVars(\"maxbank\")} Ententaler* auf der Bank und *${tempVars(\"money\")} Ententaler* in Bar!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0",
+  "_aliases": [
+    "dep",
+    "d",
+    "depo"
+  ]
+}
