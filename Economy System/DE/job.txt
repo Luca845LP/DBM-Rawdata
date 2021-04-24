@@ -1,0 +1,395 @@
+{
+  "name": "job",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "JlaSs",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "currentlevellollll",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"currentlevellollll\")}",
+      "info": "2",
+      "SecondNumber": "2000",
+      "storage": "1",
+      "varName": "maxbanksnewww",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "changeType": "0",
+      "value": "tempVars(\"maxbanksnewww\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "job",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "14",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "",
+      "author": "Job",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du hast keinen richtigen Job angegeben! Wähle einen:\n*Verfügbar:*\n```\nYouTuber | 3000-4500 Ententaler\nChat-Mod | 2000-3500 Ententaler\nPutztante | 1000-1750 Ententaler\nEntenfütterer | 5000-6000 Ententaler\n```",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "job",
+      "comparison": "1",
+      "value": "'YouTuber'",
+      "iftrue": "2",
+      "iftrueVal": "18",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "job",
+      "comparison": "1",
+      "value": "'Chat-Mod'",
+      "iftrue": "2",
+      "iftrueVal": "24",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "job",
+      "comparison": "1",
+      "value": "'Putztante'",
+      "iftrue": "2",
+      "iftrueVal": "30",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "job",
+      "comparison": "1",
+      "value": "'Entenfütterer'",
+      "iftrue": "2",
+      "iftrueVal": "36",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Job",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "Du bist nun YouTuber!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "changeType": "0",
+      "value": "2",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Job",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "Du bist nun Chat-Mod!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "changeType": "0",
+      "value": "3",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Job",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "message": "Du bist nun Putztante!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "changeType": "0",
+      "value": "4",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Job",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb5",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "message": "Du bist nun Entenfütterer!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ]
+}
