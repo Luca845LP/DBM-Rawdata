@@ -1,0 +1,569 @@
+{
+  "name": "work",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "dWrCQ",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "currentlevellollll",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"currentlevellollll\")}",
+      "info": "2",
+      "SecondNumber": "2000",
+      "storage": "1",
+      "varName": "maxbanksnewww",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "changeType": "0",
+      "value": "tempVars(\"maxbanksnewww\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "job",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "comparison": "1",
+      "value": "'0'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "14",
+      "name": "Check Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du hast noch keinen Job! Wähle einen Job mit `?job`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb9",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb9",
+      "message": "Reagiere mit <:ente:797158772291272725>",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb9",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb9",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "1",
+      "varName3": "msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "emoji": "0",
+      "varName2": "ente",
+      "varName3": "",
+      "name": "Add Reaction"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "filter": "reaction.emoji.name === 'ente' && author.id === user.id",
+      "max": "1",
+      "time": "5000",
+      "maxEmojis": "",
+      "maxUsers": "",
+      "iftrue": "2",
+      "iftrueVal": "24",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "storage2": "0",
+      "varName2": "",
+      "name": "Await Reaction Call Action"
+    },
+    {
+      "storage": "1",
+      "varName": "gehalt.schlechtearbeit",
+      "min": "600",
+      "max": "1000",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"gehalt.schlechtearbeit\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "Boss: Du hast schlecht Gearbeitet! Ich gebe dir **${tempVars(\"gehalt.schlechtearbeit\")} Ententaler**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "comparison": "1",
+      "value": "'1'",
+      "iftrue": "2",
+      "iftrueVal": "31",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "comparison": "1",
+      "value": "'2'",
+      "iftrue": "2",
+      "iftrueVal": "38",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "comparison": "1",
+      "value": "'3'",
+      "iftrue": "2",
+      "iftrueVal": "45",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "job",
+      "comparison": "1",
+      "value": "'4'",
+      "iftrue": "2",
+      "iftrueVal": "52",
+      "iffalse": "2",
+      "iffalseVal": "9",
+      "name": "Check Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "gehalt.1",
+      "min": "3000",
+      "max": "4500",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"gehalt.1\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "Boss: Du hast gut Gearbeitet! Ich gebe dir **${tempVars(\"gehalt.1\")} Ententaler**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "gehalt.2",
+      "min": "2000",
+      "max": "3500",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"gehalt.2\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "message": "Boss: Du hast gut Gearbeitet! Ich gebe dir **${tempVars(\"gehalt.2\")} Ententaler**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb4",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "gehalt.3",
+      "min": "1000",
+      "max": "1750",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"gehalt.3\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb5",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "message": "Boss: Du hast gut Gearbeitet! Ich gebe dir **${tempVars(\"gehalt.3\")} Ententaler**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb5",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "gehalt.4",
+      "min": "5000",
+      "max": "6000",
+      "name": "Generate Random Number"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "money",
+      "changeType": "1",
+      "value": "tempVars(\"gehalt.4\")",
+      "name": "Control Member Data"
+    },
+    {
+      "title": "",
+      "author": "Work",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://image.flaticon.com/icons/png/512/189/189093.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb6",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb6",
+      "message": "Boss: Du hast gut Gearbeitet! Ich gebe dir **${tempVars(\"gehalt.4\")} Ententaler**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb6",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb6",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_timeRestriction": 300,
+  "comType": "0"
+}
