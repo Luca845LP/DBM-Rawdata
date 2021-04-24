@@ -5,3 +5,7 @@
 You only have to Change the Currency. The Currency in the German Version is "Ententaler" and in the English Version "ducks"!**
 
 **And You Should use the Prefix ? because all help texts based on the ? prefix!**
+
+**And sorry for the actions in the Phone. There are a few Actions that i have deactivated because there only for my Discord**
+
+***Support on https://discord.gg/EdK73KZ89d***
