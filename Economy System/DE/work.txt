@@ -147,7 +147,7 @@
     {
       "storage": "1",
       "varName": "emb9",
-      "message": "Reagiere mit <:ente:797158772291272725>",
+      "message": "Reagiere mit 😋",
       "name": "Set Embed Description"
     },
     {
@@ -173,14 +173,14 @@
       "storage": "1",
       "varName": "msg",
       "emoji": "0",
-      "varName2": "ente",
+      "varName2": "😋",
       "varName3": "",
       "name": "Add Reaction"
     },
     {
       "storage": "1",
       "varName": "msg",
-      "filter": "reaction.emoji.name === 'ente' && author.id === user.id",
+      "filter": "reaction.emoji.name === '😋' && author.id === user.id",
       "max": "1",
       "time": "5000",
       "maxEmojis": "",
