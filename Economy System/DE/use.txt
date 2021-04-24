@@ -123,7 +123,7 @@
     {
       "storage": "1",
       "varName": "emb-error",
-      "message": "Du hast ein Invalides Item engegeben! Nutze `?inventory` um dein Inventar anzusehen!",
+      "message": "Du hast ein Invalides Item engegeben!",
       "name": "Set Embed Description"
     },
     {
@@ -524,15 +524,15 @@
     },
     {
       "info": "0",
-      "find": "727480902933807144",
+      "find": "ignorethis",
       "storage": "1",
-      "varName": "sheriffanrufchannel",
+      "varName": "ignore",
       "name": "Find Channel"
     },
     {
       "channel": "5",
-      "varName": "sheriffanrufchannel",
-      "message": "Der User ${member} hat einen Sheriff in ${msg.channel} Gerufen!\n@here",
+      "varName": "IGNORETHIS",
+      "message": "IGNORETHIS",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
@@ -660,9 +660,9 @@
     },
     {
       "info": "0",
-      "find": "767427557976571945",
+      "find": "ignorethis",
       "storage": "1",
-      "varName": "pizzach",
+      "varName": "ignorethis",
       "name": "Find Channel"
     },
     {
@@ -696,7 +696,7 @@
     {
       "channel": "0",
       "varName": "",
-      "message": "🍕 **|** Deine Bestellung \"`${tempVars(\"bestl\")}`\" Wurde aufgegeben!\nDeine Bestellung kommt in der Regel In einer Stunde an! (Kommt auf die Uhrzeit an!)",
+      "message": "IGNORETHIS",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
@@ -704,7 +704,7 @@
       "name": "Send Message"
     },
     {
-      "title": "🍕 Bestellung",
+      "title": "IGNORETHIS",
       "author": "",
       "color": "ffd700",
       "url": "",
@@ -728,7 +728,7 @@
     {
       "storage": "1",
       "varName": "embpizza",
-      "message": "***Bestellung***:\n> *${tempVars(\"bestl\")}*\n***Kunde***:\n> **Name**: *${tempVars(\"usr\")}*\n> **ID**: *${tempVars(\"usid\")}*\n***Invite:***\n> **Invite**: *${tempVars(\"inv\")}*",
+      "message": "IGNORETHIS",
       "name": "Set Embed Description"
     },
     {
@@ -746,7 +746,7 @@
     {
       "channel": "5",
       "varName": "pizzach",
-      "message": "🍕 **|** So backst du eine Pizza:\nErst Belegst du sie mit Photoshop oder GIMP.\nDanach lädst du sie auf https://host.minirush.de Hoch und machst `p?backen`!\nDann gehst du auf den Server und stellst sie (MIT DEM LINK) Zu",
+      "message": "IGNORETHIS",
       "storage": "0",
       "varName2": "",
       "iffalse": "0",
