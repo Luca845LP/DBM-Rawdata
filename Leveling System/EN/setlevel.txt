@@ -1,0 +1,141 @@
+{
+  "name": "setlevel",
+  "permissions": "ADMINISTRATOR",
+  "restriction": "1",
+  "_id": "ZqaUB",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "userid",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "0",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "levelset",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "userid",
+      "comparison": "5",
+      "value": "'@'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "2",
+      "name": "Check Variable"
+    },
+    {
+      "info": "2",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "user",
+      "name": "Store Command Params"
+    },
+    {
+      "count": "1",
+      "name": "Skip Actions"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"userid\")}",
+      "storage": "1",
+      "varName": "user",
+      "find2": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "dataName": "level",
+      "changeType": "0",
+      "value": "tempVars(\"levelset\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "level",
+      "name": "Store Member Data"
+    },
+    {
+      "title": "",
+      "author": "Level Gecheatet",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "The user ${tempVars(\"user\")} has now level **${tempVars(\"level\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
