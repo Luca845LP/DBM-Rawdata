@@ -1,0 +1,318 @@
+{
+  "name": "level",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "YKXrW",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "params",
+      "name": "Store Command Params"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "15",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar1",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "level1",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "experience",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "experience1",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "250",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"experience1\")}",
+      "storage": "1",
+      "varName": "experiencenew1",
+      "name": "Basic Math Operation"
+    },
+    {
+      "title": "",
+      "author": "Level",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://icons.iconarchive.com/icons/inipagi/job-seeker/512/level-icon.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatar1\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "Du hast Level **${tempVars(\"level1\")}**\nUnd bekommst in **${tempVars(\"experiencenew1\")}** Nachrichten ein LevelUp",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "params",
+      "comparison": "5",
+      "value": "'@'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "25",
+      "name": "Check Variable"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar2",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "level2",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "experience",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "experience2",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "250",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"experience2\")}",
+      "storage": "1",
+      "varName": "experiencenew2",
+      "name": "Basic Math Operation"
+    },
+    {
+      "title": "",
+      "author": "Level",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://icons.iconarchive.com/icons/inipagi/job-seeker/512/level-icon.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatar2\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "Der User ${mentionedUser} hat Level **${tempVars(\"level2\")}**\nUnd er bekommt in **${tempVars(\"experiencenew2\")}** Nachrichten ein LevelUp",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb2",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"params\")}",
+      "storage": "1",
+      "varName": "user",
+      "find2": "1",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar3",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "level3",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "2",
+      "varName": "user",
+      "dataName": "experience",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "experience3",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "250",
+      "info": "1",
+      "SecondNumber": "${tempVars(\"experience3\")}",
+      "storage": "1",
+      "varName": "experiencenew3",
+      "name": "Basic Math Operation"
+    },
+    {
+      "title": "",
+      "author": "Level",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://icons.iconarchive.com/icons/inipagi/job-seeker/512/level-icon.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatar3\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "Der User ${tempVars(\"user\")} hat Level **${tempVars(\"level3\")}**\nUnd er bekommt in **${tempVars(\"experiencenew3\")}** Nachrichten ein LevelUp",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb3",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
