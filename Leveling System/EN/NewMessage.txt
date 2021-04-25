@@ -1,0 +1,399 @@
+{
+  "name": "NewMessage",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "pYRXH",
+  "actions": [
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "channelid",
+      "name": "Store Channel Info"
+    },
+    {
+      "comment": "\\/ Here you can set Channels were the Bot should not count Messages \\/",
+      "color": "#80ffff",
+      "name": "Comment"
+    },
+    {
+      "storage": "1",
+      "varName": "channelid",
+      "comparison": "5",
+      "value": "'CHANGEME'",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "channelid",
+      "comparison": "5",
+      "value": "'CHANGEME'",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "channelid",
+      "comparison": "5",
+      "value": "'CHANGEME'",
+      "iftrue": "1",
+      "iftrueVal": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "experience",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "oldexperience",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"oldexperience\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "newexperience",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "experience",
+      "changeType": "0",
+      "value": "tempVars(\"newexperience\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "experience",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "experience",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "experience",
+      "comparison": "14",
+      "value": "'150'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "2",
+      "iffalseVal": "25",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "experience",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "oldlevel",
+      "name": "Store Member Data"
+    },
+    {
+      "FirstNumber": "${tempVars(\"oldlevel\")}",
+      "info": "0",
+      "SecondNumber": "1",
+      "storage": "1",
+      "varName": "newlevel",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "changeType": "0",
+      "value": "tempVars(\"newlevel\")",
+      "name": "Control Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "level",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "comment": "\\/ Change the Channel-ID where the bot should send the notifications \\/",
+      "color": "#80ffff",
+      "name": "Comment"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "channel",
+      "name": "Find Channel"
+    },
+    {
+      "title": "",
+      "author": "Level UP",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://cdn1.iconfinder.com/data/icons/game-design-color-pop-vol-2/64/level-up-512.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"avatar\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "message": "**${tempVars(\"username\")}** is now level **${tempVars(\"level\")}**",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emb",
+      "channel": "5",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "5",
+      "varName": "channel",
+      "message": "${member}",
+      "storage": "1",
+      "varName2": "msg",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "1",
+      "varName": "msg",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "FirstNumber": "${tempVars(\"level\")}",
+      "info": "2",
+      "SecondNumber": "2000",
+      "storage": "1",
+      "varName": "maxbank",
+      "name": "Basic Math Operation"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "maxbank",
+      "changeType": "0",
+      "value": "tempVars(\"maxbank\")",
+      "name": "Control Member Data"
+    },
+    {
+      "comment": "\\/ Here you can change the roles that you get on X level \\/",
+      "color": "#80ffff",
+      "name": "Comment"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "anfänger",
+      "name": "Find Role"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "schüler",
+      "name": "Find Role"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "erfahrener",
+      "name": "Find Role"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "lehrer",
+      "name": "Find Role"
+    },
+    {
+      "info": "0",
+      "find": "CHANGEME",
+      "storage": "1",
+      "varName": "profi",
+      "name": "Find Role"
+    },
+    {
+      "comment": "\\/ Here you can change from when you get on X role \\/",
+      "color": "#80ffff",
+      "name": "Comment"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "comparison": "1",
+      "value": "'2'",
+      "iftrue": "2",
+      "iftrueVal": "39",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "comparison": "1",
+      "value": "'5'",
+      "iftrue": "2",
+      "iftrueVal": "41",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "comparison": "1",
+      "value": "'10'",
+      "iftrue": "2",
+      "iftrueVal": "43",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "comparison": "1",
+      "value": "'30'",
+      "iftrue": "2",
+      "iftrueVal": "45",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "level",
+      "comparison": "1",
+      "value": "'50'",
+      "iftrue": "2",
+      "iftrueVal": "47",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Member Data"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "anfänger",
+      "reason": "",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "schüler",
+      "reason": "",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "erfahrener",
+      "reason": "",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "lehrer",
+      "reason": "",
+      "name": "Add Member Role"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName2": "",
+      "role": "3",
+      "varName": "profi",
+      "reason": "",
+      "name": "Add Member Role"
+    }
+  ],
+  "comType": "3"
+}
