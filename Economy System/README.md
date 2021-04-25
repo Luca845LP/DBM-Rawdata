@@ -8,4 +8,4 @@ You only have to Change the Currency. The Currency in the German Version is "Ent
 
 **And sorry for the actions in the Phone. There are a few Actions that i have deactivated because there only for my Discord**
 
-***Support on https://discord.gg/EdK73KZ89d***
+***Support per Discord Luca845LP#6355***
