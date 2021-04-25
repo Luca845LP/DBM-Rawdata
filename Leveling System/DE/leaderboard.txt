@@ -1,0 +1,144 @@
+{
+  "name": "leaderboard",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "PDIlD",
+  "actions": [
+    {
+      "storage": "0",
+      "varName": "",
+      "reason": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "mem.avatar",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "21",
+      "storage": "1",
+      "varName2": "mem.tag",
+      "name": "Store Member Info"
+    },
+    {
+      "File": "0",
+      "serverType": "0",
+      "dataName": "level",
+      "sort": "0",
+      "numberBoolean": "1",
+      "resultFormat": "') ' + '*' + Name + '*' + ' - ' + '**' + DataValue + '**'",
+      "resultInfo": "0",
+      "rank": "",
+      "resultType": "1",
+      "resultFrom": "",
+      "resultTo": "10",
+      "varName": "levelboard",
+      "storage": "1",
+      "name": "Store Data List MOD"
+    },
+    {
+      "File": "0",
+      "serverType": "0",
+      "dataName": "money",
+      "sort": "0",
+      "numberBoolean": "1",
+      "resultFormat": "') ' + '*' + Name + '*' + ' - ' + '**' + DataValue + '**'",
+      "resultInfo": "0",
+      "rank": "",
+      "resultType": "1",
+      "resultFrom": "",
+      "resultTo": "10",
+      "varName": "moneyboard",
+      "storage": "1",
+      "name": "Store Data List MOD"
+    },
+    {
+      "File": "0",
+      "serverType": "0",
+      "dataName": "bank",
+      "sort": "0",
+      "numberBoolean": "1",
+      "resultFormat": "') ' + '*' + Name + '*' + ' - ' + '**' + DataValue + '**'",
+      "resultInfo": "0",
+      "rank": "",
+      "resultType": "1",
+      "resultFrom": "",
+      "resultTo": "10",
+      "varName": "bankboard",
+      "storage": "1",
+      "name": "Store Data List MOD"
+    },
+    {
+      "title": "",
+      "author": "Leaderboard",
+      "color": "2f3136",
+      "url": "",
+      "authorIcon": "https://img.icons8.com/bubbles/2x/leaderboard.png",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emb1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "fieldName": "Level",
+      "message": "${tempVars(\"levelboard\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "fieldName": "Money",
+      "message": "${tempVars(\"moneyboard\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "fieldName": "Bank",
+      "message": "${tempVars(\"bankboard\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "message": "${tempVars(\"mem.tag\")}",
+      "footerIcon": "${tempVars(\"mem.avatar\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "emb1",
+      "channel": "0",
+      "varName2": "channel",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
