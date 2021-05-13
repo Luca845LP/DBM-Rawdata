@@ -2,7 +2,8 @@
 --------------------
 ### [Command](https://github.com/Luca845LP/DBM-Rawdata/blob/main/Raw%20Datas/apply.md#command-1 "Click")
 
-**Das ist ein Deutsches Bewerbungs System. **
+__Das ist ein Deutsches Bewerbungs System.__
+
 Die Fragen sind:
 - *Wie heißt Du?*
 - *Wie alt bist du?*
