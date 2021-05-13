@@ -1,7 +1,17 @@
 # Apply Command
 --------------------
-### [Command](https://github.com/Luca845LP/DBM-Rawdata/edit/main/Raw%20Datas/apply.md#command-1 "Click")
+### [Command](https://github.com/Luca845LP/DBM-Rawdata/blob/main/Raw%20Datas/apply.md#command-1 "Click")
 
+**Das ist ein Deutsches Bewerbungs System. **
+Die Fragen sind:
+- *Wie heißt Du?*
+- *Wie alt bist du?*
+- *Erzähl etwas Über Dich!* 
+- *Was sind deine Erfahrungen / Referenzen?* 
+- *Wie erreichen wir dich(Kontakt)?* 
+- *Noch Weitere Infos / Anliegen? Schreib sie mir!*
+- Das System macht für jeden User einen eigenen Channel damit man seine Ruhe hat und löscht diesen Automatisch und schickt einen Embed an einen Log Channel! 
+- ***__VOLL EINSTELLBAR__***
 --------------------
 ## Command
 ```
