@@ -15,13 +15,7 @@ Die Fragen sind:
 - ***__VOLL EINSTELLBAR__***
 --------------------
 ## Command
-```
-{
-  "name": "<font color=\"orange\"> Global Chat </font>",
-  "permissions": "NONE",
-  "restriction": "1",
-  "_id": "JhNwr",
-  "actions": [
+```json
 {
   "name": "apply",
   "permissions": "NONE",
