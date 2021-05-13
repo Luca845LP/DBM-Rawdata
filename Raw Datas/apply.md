@@ -11,7 +11,8 @@ Die Fragen sind:
 - *Was sind deine Erfahrungen / Referenzen?* 
 - *Wie erreichen wir dich(Kontakt)?* 
 - *Noch Weitere Infos / Anliegen? Schreib sie mir!*
-- Das System macht für jeden User einen eigenen Channel damit man seine Ruhe hat und löscht diesen Automatisch und schickt einen Embed an einen Log Channel! 
+
+Das System macht für jeden User einen eigenen Channel damit man seine Ruhe hat und löscht diesen Automatisch und schickt einen Embed an einen Log Channel! 
 
 ***__VOLL EINSTELLBAR__***
 --------------------
